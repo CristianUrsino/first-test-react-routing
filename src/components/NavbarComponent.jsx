@@ -3,13 +3,13 @@ import './NavbarComponent.css'
 function NavbarComponent() {
     return (
         <ul className="d-flex my-navbar">
-            <li>
+            <li className="lead">
                 <Link to={'/'}>Home</Link>
             </li>
-            <li>
+            <li className="lead">
                 <Link to={'/cards'}>Cards</Link>
             </li>
-            <li>
+            <li className="lead">
                 <Link to={'/card-details'}>Card Details</Link>
             </li> 
         </ul>
