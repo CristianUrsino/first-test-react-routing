@@ -3,25 +3,25 @@ import {Link} from "react-router-dom"
 function HomeComponent () {
     return (
         <>
-            <header className="text-center">
+            <header className="text-center my-section">
                 <h1 className="display-4">Benvenuto al Blog delle Città</h1>
-                <p className="lead">Esplora, scopri e condividi le meraviglie delle città di tutto il mondo.</p>
+                <p className="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, soluta!</p>
             </header>
-            <main className="mt-5 home-main">
+            <main className="my-section">
                 <div className="row">
                 <div className="col-md-6 mb-4">
                     <h2 className="display-4">Scopri Nuove Destinazioni</h2>
-                    <p className="lead">Il nostro blog offre una vasta gamma di articoli e guide su città di tutti i continenti, dalla vibrante New York alla storica Roma, passando per le esotiche Bangkok e Tokyo.</p>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus ipsa quod iste animi quis quae, praesentium rem, temporibus recusandae expedita rerum fugiat aliquid perspiciatis dignissimos atque consequuntur illum perferendis molestiae quidem?</p>
                 </div>
                 <div className="col-md-6 mb-4">
                     <h2 className="display-4">Esperienze Autentiche</h2>
-                    <p className="lead">Scopri le esperienze autentiche e i consigli locali per rendere il tuo viaggio unico e indimenticabile. Dai consigli sui migliori ristoranti ai luoghi nascosti da visitare, siamo qui per guidarti.</p>
+                    <p className="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio exercitationem nesciunt, mollitia, a iure atque id, accusamus assumenda porro vel dignissimos.</p>
                 </div>
                 </div>
                 <div className="row">
                 <div className="col-md-6">
                     <h2 className="display-4">Salva le Tue Avventure</h2>
-                    <p className="lead">Se sei un viaggiatore appassionato e desideri condividere le tue avventure con una community globale, unisciti a noi! Puoi contribuire con i tuoi articoli e le tue foto e ispirare altri viaggiatori.</p>
+                    <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, iusto quis consequuntur magni possimus, dignissimos omnis aspernatur</p>
                 </div>
                 </div>
                 <div className="text-center mt-5">

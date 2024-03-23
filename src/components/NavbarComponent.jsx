@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import './NavbarComponent.css'
 function NavbarComponent() {
     return (
-        <ul className="d-flex my-navbar">
+        <ul className="d-flex my-navbar my-section">
             <li className="lead">
                 <Link to={'/'}>Home</Link>
             </li>

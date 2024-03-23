@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <NavbarComponent />
-      <div>
+      <div className='mb-5'>
         <Outlet />
       </div>
       <FooterComponent />

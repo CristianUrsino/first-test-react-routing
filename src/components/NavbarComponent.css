@@ -3,7 +3,10 @@
     background-color: #f8f9fa;
 
 }
-
+.my-navbar.my-section{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
   .my-navbar li {
     margin-right: 10px;
   }
@@ -13,10 +16,10 @@
   }
   
   .my-navbar li a {
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #333;
-    padding: 5px 10px; 
+    padding: 8px 15px; 
     border-radius: 5px; 
     background-color: #f0f0f0; 
     transition: background-color 0.3s; 
