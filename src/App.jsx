@@ -10,13 +10,13 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
-    <>
-    <NavbarComponent />
-    <div>
-      <Outlet />
+    <div className="app">
+      <NavbarComponent />
+      <div>
+        <Outlet />
+      </div>
+      <FooterComponent />
     </div>
-    <FooterComponent />
-    </>
   )
 }
 

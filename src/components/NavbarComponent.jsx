@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
+import './NavbarComponent.css'
 function NavbarComponent() {
     return (
-        <ul>
+        <ul className="d-flex my-navbar">
             <li>
                 <Link to={'/'}>Home</Link>
             </li>

@@ -12,6 +12,8 @@ import App from './App.jsx'
 import CardDetails from './components/CardDetails.jsx'
 import CardsComponent from './components/CardsComponent.jsx'
 import HomeComponent from './components/HomeComponent.jsx'
+//import bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
