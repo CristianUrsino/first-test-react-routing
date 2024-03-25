@@ -1,11 +1,10 @@
-import "./HomePage.css"
 import {Link} from "react-router-dom"
 function HomeComponent () {
     return (
         <>
             <header className="text-center my-section">
-                <h1 className="display-4">Benvenuto al Blog delle Città</h1>
-                <p className="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, soluta!</p>
+                <h1 className="display-4 mb-3">Benvenuto al Blog delle Città</h1>
+                <p className="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores possimus nostrum iste molestiae omnis expedita exercitationem quaerat tempore amet totam quas, velit voluptate dignissimos, doloremque fuga! Unde non fuga, culpa earum illum iure consequuntur maxime quod porro, explicabo facilis dolorum.</p>
             </header>
             <main className="my-section">
                 <div className="row">
