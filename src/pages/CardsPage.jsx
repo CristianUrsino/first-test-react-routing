@@ -22,6 +22,7 @@ function CardsComponent() {
                                 image={city.image}
                                 country={city.country}
                                 visited={city.visited}
+                                index={index}
                                 key={index}
                                 />        
                             )
