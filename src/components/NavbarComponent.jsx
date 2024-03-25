@@ -7,10 +7,10 @@ function NavbarComponent() {
                 <Link to={'/'}>Home</Link>
             </li>
             <li className="lead">
-                <Link to={'/cards'}>Città</Link>
+                <Link to={'/cities'}>Città</Link>
             </li>
             <li className="lead">
-                <Link to={'/card-details'}>Città</Link>
+                <Link to={'/new-city'}>Aggiungi città</Link>
             </li> 
         </ul>
     )

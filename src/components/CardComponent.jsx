@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function CardComponent({ name, description, image, country, visited, index }) {
     return (
         <div className='col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5' key={index}>
-            <Link to={`/cards/${index}`} className="text-decoration-none" >
+            <Link to={`/cities/${index}`} className="text-decoration-none" >
             <div className="card">
                 <figure className="position-relative">
                     <img src={image} className="card-img-top my-card-img" alt={"immagine di" + name}  />

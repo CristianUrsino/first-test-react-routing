@@ -9,9 +9,10 @@ import {Provider} from 'react-redux'
 import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom'
 //import components
 import App from './App.jsx'
-import CardDetails from './pages/CardDetails.jsx'
+import CardDetails from './pages/CardDetailsPage.jsx'
 import CardsPage from './pages/CardsPage.jsx'
 import HomePage from './pages/HomePage.jsx'
+import NewCityPage from './pages/NewCityPage.jsx'
 //import bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -25,13 +26,17 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/cards',
+        path: '/cities',
         element: <CardsPage />,
       },
       {
-        path: '/cards/:id',
+        path: '/cities/:id',
         element: <CardDetails />,
-      }
+      },
+      {
+        path: '/new-city',
+        element: <NewCityPage />,
+      },
     ]
   }
 ]);
