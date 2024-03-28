@@ -41,7 +41,7 @@ export const citiesSlice = createSlice({
     },
     reducers: {
         addCity: (state, action) => {
-            state.push(action.payload)
+            state.value.push(action.payload)
         }
     }
 })

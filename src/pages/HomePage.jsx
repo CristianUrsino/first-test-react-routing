@@ -24,7 +24,7 @@ function HomeComponent () {
                 </div>
                 </div>
                 <div className="text-center mt-5">
-                    <Link to={"/cards"}>
+                    <Link to={"/cities"}>
                         <button type="button" className="btn btn-primary btn-lg pd-1 center">Vai alle tue città</button>
                     </Link>
                 </div>
