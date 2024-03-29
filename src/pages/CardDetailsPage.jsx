@@ -1,11 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from "react-router-dom";
+import UpdateCityComponent from "../components/UpdateCityComponent";
 import "./CardDetails.css"
 function CardDetails() {
+    //definisco l'id della città 
     const {id} = useParams();
 
+    //definisco la variabile per mostrare l'update
+    const [flagShowUpdate, setFlagShowUpdate] = useState(false);
+
+    //definisco le variabili per le città
     const cities = useSelector(state => state.cities.value);
     const dispatch = useDispatch()
+
+    //funzione per cancellare una citta
+    const handleDelete = () => {
+        console.log("delete", id);
+    }
+
+    //funzione per mostrare update city
+    const ShowUpdate = () => {
+        setFlagShowUpdate(true);
+    }
 
     return (
         <>
@@ -21,7 +38,17 @@ function CardDetails() {
 
                 }
                 <p className="lead mt-4">{cities[id].description}</p>
+                <div className="mt-4 text-center">
+                    <button className="btn btn-danger me-3" onClick={handleDelete}>Cancella</button>
+                    <button className="btn btn-info" onClick={ShowUpdate}>Modifica</button>
+                </div>
             </div>
+
+            {flagShowUpdate && 
+                <div>
+                    <UpdateCityComponent setFlagShowUpdate={setFlagShowUpdate}/>
+                </div>
+            }
         </>
     )
 }
