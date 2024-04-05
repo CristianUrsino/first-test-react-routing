@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { deleteCity } from "../redux/citiesSlice";
 import { useParams } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import UpdateCityComponent from "../components/UpdateCityComponent";
 import "./CardDetails.css"
 function CardDetails() {
     //definisco l'id della città 
     const {id} = useParams();
+
+    //definisco la Navigate per tornare indietro se cancello una citta
+    const navigate = useNavigate();
 
     //definisco la variabile per mostrare l'update
     const [flagShowUpdate, setFlagShowUpdate] = useState(false);
@@ -16,7 +21,10 @@ function CardDetails() {
 
     //funzione per cancellare una citta
     const handleDelete = () => {
-        console.log("delete", id);
+        //cancello la citta
+        dispatch(deleteCity(id));
+        //torno indietro
+        navigate('/cities');
     }
 
     //funzione per mostrare update city

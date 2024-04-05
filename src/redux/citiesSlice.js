@@ -45,9 +45,12 @@ export const citiesSlice = createSlice({
         },
         updateCity: (state, action) => {
             state.value[action.payload.id] = action.payload.formDate;
+        },
+        deleteCity: (state, action) => {
+            state.value.splice(action.payload, 1)
         }
     }
 })
 
-export const { addCity, updateCity } = citiesSlice.actions
+export const { addCity, updateCity, deleteCity } = citiesSlice.actions
 export default citiesSlice.reducer
