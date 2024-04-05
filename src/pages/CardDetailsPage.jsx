@@ -46,7 +46,11 @@ function CardDetails() {
 
             {flagShowUpdate && 
                 <div>
-                    <UpdateCityComponent setFlagShowUpdate={setFlagShowUpdate}/>
+                    <UpdateCityComponent 
+                    setFlagShowUpdate={setFlagShowUpdate}
+                    city = {cities[id]}
+                    idCity = {id}
+                    />
                 </div>
             }
         </>
